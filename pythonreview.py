@@ -4,16 +4,23 @@ def create_youtube_video(title,desc):
 
 
 def like (video):
-	if "likes" in youtube_video :
-		likes += 1
+	if "likes" in video :
+		video["likes"] += 1
 	return video
 
 def dislike (video):
-	if "dislikes" in youtube_video :
-		dislikes += 1
+	if "dislikes" in video :
+		video["dislikes"] += 1
 	return video
 
 
+def add_comment ():
+	[youtubevideo] = ""
+	[username] = ""
+	comment={"username":"comment_text"}
+	return comment
 
 
 
+youtubevideo = create_youtube_video("hi","hh")
+print (youtubevideo)
